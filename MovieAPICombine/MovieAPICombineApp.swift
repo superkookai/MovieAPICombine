@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MovieAPICombineApp: App {
+    private let httpClient = HTTPClient()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(httpClient: httpClient)
         }
     }
 }
