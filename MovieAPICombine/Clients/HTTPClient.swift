@@ -26,6 +26,9 @@ class HTTPClient {
             .map(\.data)
             .decode(type: MovieResponse.self, decoder: JSONDecoder())
             .map(\.Search)
+            .breakpoint(receiveOutput: { movies in
+                movies.isEmpty //if it is empty (it is true), it breaks 
+            })
             .receive(on: DispatchQueue.main)
             .catch { error -> AnyPublisher<[Movie], Error> in
                 return Just([]).setFailureType(to: Error.self).eraseToAnyPublisher()

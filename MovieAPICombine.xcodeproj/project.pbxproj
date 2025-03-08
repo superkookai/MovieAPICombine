@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF794B2B2D7C006900256B79 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C89F2D7AECDE0081F7EB /* HTTPClient.swift */; };
+		EF794B2C2D7C007D00256B79 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C89C2D7AECA40081F7EB /* Movie.swift */; };
+		EF794B2D2D7C008900256B79 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C8A82D7B00CF0081F7EB /* APIKeys.swift */; };
+		EF794B2E2D7C009700256B79 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C8A22D7AED060081F7EB /* String+Ext.swift */; };
 		EFA4C8982D7AEC800081F7EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C8952D7AEC800081F7EB /* ContentView.swift */; };
 		EFA4C8992D7AEC800081F7EB /* MovieAPICombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C8962D7AEC800081F7EB /* MovieAPICombineApp.swift */; };
 		EFA4C89A2D7AEC800081F7EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA4C8922D7AEC800081F7EB /* Preview Assets.xcassets */; };
@@ -18,7 +22,18 @@
 		EFA4C8A92D7B00CF0081F7EB /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4C8A82D7B00CF0081F7EB /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EF794B262D7C000800256B79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA4C8792D7AEC6C0081F7EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA4C8802D7AEC6C0081F7EB;
+			remoteInfo = MovieAPICombine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EF794B222D7C000800256B79 /* MovieAPICombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAPICombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA4C8812D7AEC6C0081F7EB /* MovieAPICombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAPICombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA4C8922D7AEC800081F7EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFA4C8942D7AEC800081F7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +47,22 @@
 		EFA4C8A82D7B00CF0081F7EB /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EF794B232D7C000800256B79 /* MovieAPICombineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MovieAPICombineTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		EF794B1F2D7C000800256B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFA4C87E2D7AEC6C0081F7EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +78,7 @@
 			children = (
 				EFA4C8A52D7B005D0081F7EB /* .gitignore */,
 				EFA4C8972D7AEC800081F7EB /* MovieAPICombine */,
+				EF794B232D7C000800256B79 /* MovieAPICombineTests */,
 				EFA4C8822D7AEC6C0081F7EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EFA4C8812D7AEC6C0081F7EB /* MovieAPICombine.app */,
+				EF794B222D7C000800256B79 /* MovieAPICombineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +143,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EF794B212D7C000800256B79 /* MovieAPICombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF794B282D7C000800256B79 /* Build configuration list for PBXNativeTarget "MovieAPICombineTests" */;
+			buildPhases = (
+				EF794B1E2D7C000800256B79 /* Sources */,
+				EF794B1F2D7C000800256B79 /* Frameworks */,
+				EF794B202D7C000800256B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF794B272D7C000800256B79 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EF794B232D7C000800256B79 /* MovieAPICombineTests */,
+			);
+			name = MovieAPICombineTests;
+			packageProductDependencies = (
+			);
+			productName = MovieAPICombineTests;
+			productReference = EF794B222D7C000800256B79 /* MovieAPICombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EFA4C8802D7AEC6C0081F7EB /* MovieAPICombine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFA4C88F2D7AEC6E0081F7EB /* Build configuration list for PBXNativeTarget "MovieAPICombine" */;
@@ -140,6 +195,10 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					EF794B212D7C000800256B79 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EFA4C8802D7AEC6C0081F7EB;
+					};
 					EFA4C8802D7AEC6C0081F7EB = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -160,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				EFA4C8802D7AEC6C0081F7EB /* MovieAPICombine */,
+				EF794B212D7C000800256B79 /* MovieAPICombineTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF794B202D7C000800256B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFA4C87F2D7AEC6C0081F7EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +245,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF794B1E2D7C000800256B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF794B2B2D7C006900256B79 /* HTTPClient.swift in Sources */,
+				EF794B2D2D7C008900256B79 /* APIKeys.swift in Sources */,
+				EF794B2E2D7C009700256B79 /* String+Ext.swift in Sources */,
+				EF794B2C2D7C007D00256B79 /* Movie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFA4C87D2D7AEC6C0081F7EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +271,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EF794B272D7C000800256B79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA4C8802D7AEC6C0081F7EB /* MovieAPICombine */;
+			targetProxy = EF794B262D7C000800256B79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		EF794B292D7C000800256B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9MD4URZFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superkookai.MovieAPICombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieAPICombine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieAPICombine";
+			};
+			name = Debug;
+		};
+		EF794B2A2D7C000800256B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9MD4URZFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.superkookai.MovieAPICombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieAPICombine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieAPICombine";
+			};
+			name = Release;
+		};
 		EFA4C88D2D7AEC6E0081F7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF794B282D7C000800256B79 /* Build configuration list for PBXNativeTarget "MovieAPICombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF794B292D7C000800256B79 /* Debug */,
+				EF794B2A2D7C000800256B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EFA4C87C2D7AEC6C0081F7EB /* Build configuration list for PBXProject "MovieAPICombine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
